@@ -22,6 +22,18 @@
         </activity>
         <activity android:name=".Unupdate">
         </activity>
+        <activity android:name=".Guide">
+        </activity>
+        <activity android:name=".GopY">
+        </activity>
+        <activity android:name=".Gaitri">
+        </activity>
+        <activity android:name=".Hoso">
+        </activity>
+        <activity android:name=".UpdatePro">
+        </activity>
+        <activity android:name=".ClickCancel">
+        </activity>
     </application>
 
 </manifest>

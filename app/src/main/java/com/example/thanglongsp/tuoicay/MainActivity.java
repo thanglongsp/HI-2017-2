@@ -10,7 +10,11 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnClickOk;
-
+    private Button btnClickCancel;
+    private Button btnGui;
+    private Button btnGopy;
+    private Button btnHoso;
+    private Button btnGiaitri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,52 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnGui=(Button)findViewById(R.id.bntGuide);
+        btnGui.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Guide.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGopy=(Button)findViewById(R.id.bntGopy);
+        btnGopy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,GopY.class);
+                startActivity(intent);
+            }
+        });
+
+        btnHoso=(Button)findViewById(R.id.bntProfile);
+        btnHoso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Hoso.class);
+                startActivity(intent);
+            }
+        });
+
+        btnClickCancel=(Button)findViewById(R.id.btnCancel);
+        btnClickCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ClickCancel.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGiaitri=(Button)findViewById(R.id.button3);
+        btnGiaitri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Gaitri.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
